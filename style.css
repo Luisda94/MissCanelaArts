@@ -1,0 +1,18 @@
+body {
+  background-color: #ffffff;
+  color: #333;
+}
+
+header, footer {
+  background-color: #9c3eaf !important;
+}
+
+.card-title {
+  color: #9c3eaf;
+}
+
+main {
+  background-color: #c6b3bd;
+  padding: 20px;
+  border-radius: 10px;
+}
