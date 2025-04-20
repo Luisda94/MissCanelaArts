@@ -1,14 +1,14 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: url('Assets/fondoLilaHoja.jpg') no-repeat center center fixed;
+  background: url('Assets/fondoHeader.jpg') center center;
   background-size: cover;
+  background-color: #9c3eaf;
   color: #333;
 }
 
 
 header {
-  background-color: #9c3eaf;
   color: #fff;
   padding: 20px;
   text-align: center;
@@ -25,21 +25,79 @@ header p {
   font-weight: bold;
 }
 
+/* Botón normal */
+.btn.btn-outline-success {
+  color: #fff;
+  border-color: #c6b3bdb4;
+  background-color: #9c3eafe1;
+}
+
+/* Botón al pasar el mouse */
+.btn.btn-outline-success:hover {
+  background-color: #9c3eaf;
+  border-color: #c6b3bd;
+  color: #fff;
+}
+
+.accordion-button {
+  background-color: #bca0b4;
+  color: white;
+  font-weight: bold;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #a07c94;
+  color: white;
+  box-shadow: none;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: #a07c94;
+}
+/* Fondo para el acordeón */
+.accordion-item {
+  background-image: url('Assets/fondoLilaHojas.jpg'); /* Ruta de la imagen */
+  background-size: cover; /* Ajusta la imagen para cubrir todo el área */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que se repita la imagen */
+  border-radius: 10px; /* Bordes redondeados si lo deseas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+}
+
+.accordion-button {
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente para el botón */
+  color: #333; /* Color del texto */
+  border: none; /* Elimina el borde */
+  font-weight: bold;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: rgba(255, 255, 255, 1); /* Cambia el fondo cuando está abierto */
+}
+
+
+
 .catalogo {
+  background: url('Assets/fondoLilaHojas.jpg') center center;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
   padding: 20px;
   background-color: #c6b3bd;
+  background-size: cover;
 }
 
 .producto {
-  background-color: #fff;
+  background: url('Assets/fondoCategoria.jpg') no-repeat center center;
+  background-size: cover; /* O usa 'cover' si prefieres que cubra todo el contenedor */
   border-radius: 10px;
   padding: 15px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   text-align: center;
 }
+
+
 
 .producto img {
   max-width: 100%;
@@ -51,7 +109,7 @@ header p {
 }
 
 footer {
-  background-color: #9c3eaf;
+ 
   color: white;
   text-align: center;
   padding: 20px;
