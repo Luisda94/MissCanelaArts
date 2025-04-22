@@ -38,6 +38,14 @@ header p {
   border-color: #c6b3bd;
   color: #fff;
 }
+/* buscador personalizado*/
+  .navbar-custom {
+    background-image: url('Assets/fondoLilaHojas.jpg'); /* Imagen de fondo */
+    background-size: cover; /* Que cubra toda el área */
+    background-position: center; /* Centrada */
+    background-repeat: no-repeat;
+    background-color: #d2b48c; /* Color de respaldo si la imagen no carga */
+  }
 
 .accordion-button {
   background-color: #bca0b4;
